@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-<body style="background-color:yellow">
-<h1>WELCOME to DEVOPS with JENKINS CI/CD!</h1>
-<h2>This is Ansible-Jenkins-Tomcat with YELLOW-COLOUR !!!</h2>
+<body style="background-color:rgb(20, 192, 255)">
+<h1>DHILA JOMBLO</h1>
+<h2>gak bahaya ta</h2>
 </body>
 </html>
