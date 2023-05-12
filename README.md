@@ -1,0 +1,2 @@
+# tugaspakagus
+TA WKA
