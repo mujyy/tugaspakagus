@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Basic Tetris HTML Game</title>
+  <title>Tugas akhir WORKHSOP KOMPUTASI AWAN</title>
   <meta charset="UTF-8">
   <style>
   html, body {
