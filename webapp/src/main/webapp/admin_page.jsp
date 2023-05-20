@@ -19,7 +19,7 @@ if(!isset($_SESSION['admin_name'])){
    <title>admin page</title>
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="style1.css">
 
 </head>
 <body>
