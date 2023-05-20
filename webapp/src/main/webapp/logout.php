@@ -1,11 +1,11 @@
 <?php
 
-@include 'config.jsp';
+@include 'config.php';
 
 session_start();
 session_unset();
 session_destroy();
 
-header('location:login_form.jsp');
+header('location:login_form.php');
 
 ?>
