@@ -32,7 +32,7 @@
 				<li><a href="about.jsp">ABOUT</a></li>
 				<li><a href="service.jsp">SERVICE</a></li>
 				<li><a href="contact.jsp">CONTACT</a></li>
-        		<li><a href="login_form.jsp">LOGIN</a></li>
+        		<li><a href="login_form.php">LOGIN</a></li>
 			</ul>
 		</div>
 	</header>
