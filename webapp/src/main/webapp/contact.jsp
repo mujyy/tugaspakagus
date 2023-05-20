@@ -26,12 +26,12 @@
 	</div>
 	<header>
 		<div class="container">
-			<h1><a href="index.html">MUJYY</a></h1>
+			<h1><a href="index.jsp">MUJYY</a></h1>
 			<ul>
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="about.html">ABOUT</a></li>
-				<li class="active"><a href="service.html">SERVICE</a></li>
-				<li><a href="contact.html">CONTACT</a></li>
+				<li><a href="index.jsp">HOME</a></li>
+				<li><a href="about.jsp">ABOUT</a></li>
+				<li><a href="service.jsp">SERVICE</a></li>
+				<li class="active"><a href="contact.jsp">CONTACT</a></li>
 			</ul>
 		</div>
 	</header>
@@ -39,32 +39,33 @@
 	<!-- label -->
 	<section class="label">
 		<div class="container">
-			<p>Home / Service</p>
+			<p>Home / Contact</p>
 		</div>
 	</section>
 
 	<!-- service -->
 	<section class="service">
 		<div class="container">
-			<h3>SERVICE</h3>
+			<h3>CONTACT INFO</h3>
 			<div class="box">
 				<div class="col-4">
-					<div class="icon"><i class="fas fa-mobile"></i></div>
-					<h4>MOBILE APP</h4>
+					<h4>Address</h4>
+					<p>Dsn Moroejo Ds jerukgulunag Kandangan Kediri Jatim</p>
 				</div>
 				<div class="col-4">
-					<div class="icon"><i class="fas fa-globe"></i></div>
-					<h4>WEB DEVELOPMENT</h4>
+					<h4>Email</h4>
+					<p>nicosaputra307@gmail.com</p>
 				</div>
 				<div class="col-4">
-					<div class="icon"><i class="fas fa-edit"></i></div>
-					<h4>DESIGN</h4>
+					<h4>Telp.</h4>
+					<p>(021) 12345678</p>
 				</div>
 				<div class="col-4">
-					<div class="icon"><i class="fas fa-chart-bar"></i></div>
-					<h4>DIGITAL MARKETING</h4>
+					<h4>Hp</h4>
+					<p>085784036617</p>
 				</div>
 			</div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d453.17379822113236!2d112.28939778028474!3d-7.734942712595353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1684593548315!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
 		</div>
 	</section>
 
