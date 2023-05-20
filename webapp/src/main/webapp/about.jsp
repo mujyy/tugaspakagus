@@ -26,12 +26,12 @@
 	</div>
 	<header>
 		<div class="container">
-			<h1><a href="index.html">DZULFIKAR</a></h1>
+			<h1><a href="index.jsp">DZULFIKAR</a></h1>
 			<ul>
-				<li><a href="index.html">HOME</a></li>
-				<li class="active"><a href="about.html">ABOUT</a></li>
-				<li><a href="service.html">SERVICE</a></li>
-				<li><a href="contact.html">CONTACT</a></li>
+				<li><a href="index.jsp">HOME</a></li>
+				<li class="active"><a href="about.jsp">ABOUT</a></li>
+				<li><a href="service.jsp">SERVICE</a></li>
+				<li><a href="contact.jsp">CONTACT</a></li>
 			</ul>
 		</div>
 	</header>
@@ -46,7 +46,7 @@
 	<!-- about -->
 	<section class="about">
 		<div class="container">
-			<img src="img/banner.jpg" width="100%">
+			<img src="banner.jpg" width="100%">
 			<h3>ABOUT</h3>
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <strong>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</strong>, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <strong>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</strong>, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>

@@ -26,12 +26,12 @@
 	</div>
 	<header>
 		<div class="container">
-			<h1><a href="index.html">DZULFIKAR</a></h1>
+			<h1><a href="index.jsp">MUJYY</a></h1>
 			<ul>
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="about.html">ABOUT</a></li>
-				<li class="active"><a href="service.html">SERVICE</a></li>
-				<li><a href="contact.html">CONTACT</a></li>
+				<li><a href="index.jsp">HOME</a></li>
+				<li><a href="about.jsp">ABOUT</a></li>
+				<li class="active"><a href="service.jsp">SERVICE</a></li>
+				<li><a href="contact.jsp">CONTACT</a></li>
 			</ul>
 		</div>
 	</header>
