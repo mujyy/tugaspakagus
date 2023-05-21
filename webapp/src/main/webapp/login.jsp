@@ -90,8 +90,8 @@
     <!------------------------ Switch -------------------------->
       
     <div class="switch">
-        <a href="index.jsp" class="login" onclick="login()">Login</a>
-        <a href="login.jsp" class="register" onclick="register()">Register</a>
+        <a href="#" class="login" onclick="login()">Login</a>
+        <a href="#" class="register" onclick="register()">Register</a>
         <div class="btn-active" id="btn"></div>
     </div>
 
