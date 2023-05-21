@@ -13,14 +13,14 @@
     <!-- Header -->
     <header class="header">
       <nav class="nav">
-        <a href="#" class="nav_logo">CodingLab</a>
+        <a href="#" class="nav_logo">MUJYY</a>
 
         <ul class="nav_items">
           <li class="nav_item">
-            <a href="#" class="nav_link">Home</a>
-            <a href="#" class="nav_link">Product</a>
-            <a href="#" class="nav_link">Services</a>
-            <a href="#" class="nav_link">Contact</a>
+            <a href="index.jsp" class="nav_link">Home</a>
+            <a href="about.jsp" class="nav_link">ABOUT</a>
+            <a href="service.jsp" class="nav_link">Services</a>
+            <a href="contact.jsp" class="nav_link">Contact</a>
           </li>
         </ul>
 
