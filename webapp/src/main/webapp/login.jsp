@@ -42,7 +42,7 @@
                     <input type="submit" class="input-submit" value="Sign In">
                 </div>
                 <div class="forgot">
-                    <a href="#">Forgot password?</a>
+                    <a href="index.jsp">Kembali ke halaman utama?</a>
                 </div>
             </div>
 
