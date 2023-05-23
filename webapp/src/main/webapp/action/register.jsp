@@ -6,7 +6,7 @@ try {
 /* Create string of connection url within specified format with machine name, 
 port number and database name. Here machine name id localhost and 
 database name is usermaster. */ 
-String connectionURL = "jdbc:mysql://13.215.200.102:8080/user_db"; 
+String connectionURL = "jdbc:mysql://localhost:3306/user_db"; 
 
 // declare a connection by using Connection interface 
 Connection connection = null; 
