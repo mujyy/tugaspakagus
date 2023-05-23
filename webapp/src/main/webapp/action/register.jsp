@@ -1,37 +1,55 @@
-<%@ page import="java.sql.*" %>
-<%@ page import="java.io.*" %>
+<%@ page import="java.util.*" %>
+        <%@ page import="javax.sql.*;" %>
+        <% 
+        java.sql.Connection con; 
+        java.sql.Statement s; 
+        java.sql.ResultSet rs; 
+        java.sql.PreparedStatement pst;
+        con=null; 
+        s=null; 
+        pst=null; 
+        rs=null; 
+        
+        // Remember to change the next line with your own environment
+        String url="jdbc:jtds:sqlserver://13.215.200.102:8080/user_db" ; 
+        String id="root" ; 
+        String pass="rahasia" ; 
+        try{ 
+            Class.forName("net.sourceforge.jtds.jdbc.Driver");
+            con=java.sql.DriverManager.getConnection(url, id, pass); 
+        }catch(ClassNotFoundException cnfex){
+            cnfex.printStackTrace(); 
+        } 
+        
+        String sql="select top 10 * from tbl_sys_user" ; 
+        
+        try{
+            s=con.createStatement(); 
+            rs=s.executeQuery(sql); 
+        %>
 
-<% 
-try {
-/* Create string of connection url within specified format with machine name, 
-port number and database name. Here machine name id localhost and 
-database name is usermaster. */ 
-String connectionURL = "jdbc:mysql://13.215.200.102:8080/user_db"; 
+        <% while( rs.next() ){ %>
+            <tr>
+                <td>
+                    <%= rs.getString("cust_id") %>
+                </td>
+                <td>
+                    <%= rs.getString("rdate") %>
+                </td>
+                <td>
+                    <%= rs.getString("email") %>
+                </td>
+            </tr>
+        <% } %>
 
-// declare a connection by using Connection interface 
-Connection connection = null; 
-
-// Load JBBC driver "com.mysql.jdbc.Driver" 
-Class.forName("com.mysql.jdbc.Driver").newInstance(); 
-
-/* Create a connection by using getConnection() method that takes parameters of 
-string type connection url, user name and password to connect to database. */ 
-connection = DriverManager.getConnection(connectionURL, "root", "rahasia");
-
-// check weather connection is established or not by isClosed() method 
-if(!connection.isClosed())
-%>
-<font size="+3" color="green"></b>
-<% 
-out.println("Successfully connected to " + "MySQL server using TCP/IP...");
-connection.close();
-}
-catch(Exception ex){
-%>
-</font>
-<font size="+3" color="red"></b>
-<%
-out.println("Unable to connect to database.");
-}
-%>
-</font>
+        <% } catch(Exception e){
+            e.printStackTrace();
+        } 
+        finally{ 
+            if(rs!=null) 
+                rs.close(); 
+            if(s!=null)
+                s.close(); 
+            if(con!=null) 
+                con.close(); 
+        } %>
