@@ -6,7 +6,7 @@ try {
 /* Create string of connection url within specified format with machine name, 
 port number and database name. Here machine name id localhost and 
 database name is usermaster. */ 
-String connectionURL = "jdbc:mysql://localhost:3306/usermaster"; 
+String connectionURL = "jdbc:mysql://13.215.200.102:8080//usermaster"; 
 
 // declare a connection by using Connection interface 
 Connection connection = null; 
@@ -16,7 +16,7 @@ Class.forName("com.mysql.jdbc.Driver").newInstance();
 
 /* Create a connection by using getConnection() method that takes parameters of 
 string type connection url, user name and password to connect to database. */ 
-connection = DriverManager.getConnection(connectionURL, "root", "root");
+connection = DriverManager.getConnection(connectionURL, "root", "rahasia");
 
 // check weather connection is established or not by isClosed() method 
 if(!connection.isClosed())

@@ -56,7 +56,7 @@
             <h3>Sign Up, Now</h3>
             <small>We are happy to have you with us.</small>
         </div>
-        <form action="action/register.php" class="input-group">
+        <form action="action/register.jsp" class="input-group">
             <div class="input-field">
                 <input type="text" class="input-box" id="regUser" required name="username">
                 <label for="regUser">Username</label>
