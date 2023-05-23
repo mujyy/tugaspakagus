@@ -56,17 +56,17 @@
             <h3>Sign Up, Now</h3>
             <small>We are happy to have you with us.</small>
         </div>
-        <div class="input-group">
+        <form action="action/register.php" class="input-group">
             <div class="input-field">
-                <input type="text" class="input-box" id="regUser" required>
+                <input type="text" class="input-box" id="regUser" required name="username">
                 <label for="regUser">Username</label>
             </div>
             <div class="input-field">
-                <input type="text" class="input-box" id="regEmail" required>
+                <input type="text" class="input-box" id="regEmail" required name="email">
                 <label for="regEmail">Email address</label>
             </div>
             <div class="input-field">
-                <input type="password" class="input-box" id="regPassword" required>
+                <input type="password" class="input-box" id="regPassword" required name="password">
                 <label for="regPassword">Password</label>
                  <div class="eye-area">
                         <div class="eye-box" onclick="myRegPassword()">
@@ -80,10 +80,10 @@
                 <label for="formCheck-2"> Remember Me</label>
             </div>
             <div class="input-field">
-                <input type="submit" class="input-submit" value="Sign In">
+                <button type="submit" class="input-submit" value="Sign In">Register</button>
             </div>
             
-        </div>
+        </form>
 
     </div>
 
