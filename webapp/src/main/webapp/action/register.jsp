@@ -1,22 +1,37 @@
-<%@page import ="java.sql.*"%>
-<%@page import="java.io.*" %>
+<%@ page import="java.sql.*" %>
+<%@ page import="java.io.*" %>
 
 <% 
-Connection connection+null;
-Statement statement=null;
-ResultSet rs=null;
 try {
-String connectionURL = "jdbc:mysql://13.215.200.102:3306/user_db";
-String username = "root";
-String password = "rahasia";
-Class.forName("com.mysql.jdbc.Driver");
-connection = DriverManager.getConnection(connectionURL, username, password);
-connection.close();
+/* Create string of connection url within specified format with machine name, 
+port number and database name. Here machine name id localhost and 
+database name is usermaster. */ 
+String connectionURL = "jdbc:mysql://13.215.200.102:3306/user_db"; 
 
-} 
-catch (Exception e) {
-System.err.println("GAGAL KONEKSI KE DATABASE"+e.getMessage());
-out.println("GAGAL"+e.getMessage())
-}
+// declare a connection by using Connection interface 
+Connection connection = null; 
 
+// Load JBBC driver "com.mysql.jdbc.Driver" 
+Class.forName("com.mysql.jdbc.Driver").newInstance(); 
+
+/* Create a connection by using getConnection() method that takes parameters of 
+string type connection url, user name and password to connect to database. */ 
+connection = DriverManager.getConnection(connectionURL, "root", "rahasia");
+
+// check weather connection is established or not by isClosed() method 
+if(!connection.isClosed())
 %>
+<font size="+3" color="green"></b>
+<% 
+out.println("Successfully connected to " + "MySQL server using TCP/IP...");
+connection.close();
+}
+catch(Exception ex){
+%>
+</font>
+<font size="+3" color="red"></b>
+<%
+out.println("Unable to connect to database.");
+}
+%>
+</font>
